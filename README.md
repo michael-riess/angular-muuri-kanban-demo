@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+## Inspiration
+
+After looking for some documentation and examples of Muuri with Angular and coming up short, I decided to make a simple sample project that might help others looking for stepping board.
+
+Angular implementation of Niklas Rämö's [Muuri: simple kanban](https://codepen.io/niklasramo/details/ppeMbK)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
