@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 After looking for some documentation and examples of Muuri with Angular and coming up short, I decided to make a simple sample project that might help others looking for stepping board.
 
-Angular implementation of Niklas Rämö's [Muuri: simple kanban](https://codepen.io/niklasramo/details/ppeMbK)
+Angular 6 implementation of Niklas Rämö's [Muuri: simple kanban](https://codepen.io/niklasramo/details/ppeMbK)
 
 ## Development server
 
