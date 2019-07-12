@@ -8,15 +8,13 @@ import * as Muuri from 'muuri';
 })
 export class HomePageComponent implements OnInit {
 
-    public itemContainers: Array<any>;
-    public columnGrids: Array<any>;
+    public itemContainers: Element[];
+    public columnGrids: any[];
     public boardGrid: any;
 
-    constructor() { }
-
     ngOnInit() {
-        this.itemContainers = new Array<any>().slice.call(document.querySelectorAll('.board-column-content'));
-        this.columnGrids = new Array<any>();
+        this.itemContainers = [].slice.call(document.querySelectorAll('.board-column-content'));
+        this.columnGrids = [];
 
         // Define the column grids so we can drag those
         // items around.
@@ -45,7 +43,7 @@ export class HomePageComponent implements OnInit {
                     item.getElement().style.width = item.getWidth() + 'px';
                     item.getElement().style.height = item.getHeight() + 'px';
                 })
-                .on('dragReleaseEnd', function (item) {
+                .on('dragReleaseEnd', (item) => {
                     // Let's remove the fixed width/height from the
                     // dragged item now that it is back in a grid
                     // column and can freely adjust to it's
@@ -55,9 +53,7 @@ export class HomePageComponent implements OnInit {
                     // Just in case, let's refresh the dimensions of all items
                     // in case dragging the item caused some other items to
                     // be different size.
-                    this.columnGrids.forEach((_grid) => {
-                        _grid.refreshItems();
-                    });
+                    this.columnGrids.forEach(x => x.refreshItems());
                 })
                 .on('layoutStart', () => {
                     // Let's keep the board grid up to date with the
