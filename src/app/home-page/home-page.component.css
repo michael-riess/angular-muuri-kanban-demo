@@ -1,8 +1,8 @@
 .board {
     position: relative;
     margin-left: 1%;
-  }
-  .board-column {
+}
+.board-column {
     position: absolute;
     left: 0;
     right: 0;
@@ -11,15 +11,15 @@
     background: #f0f0f0;
     border-radius: 3px;
     z-index: 1;
-  }
-  .board-column.muuri-item-releasing {
+}
+.board-column.muuri-item-releasing {
     z-index: 2;
-  }
-  .board-column.muuri-item-dragging {
+}
+.board-column.muuri-item-dragging {
     z-index: 3;
     cursor: move;
-  }
-  .board-column-header {
+}
+.board-column-header {
     position: relative;
     height: 50px;
     line-height: 50px;
@@ -29,42 +29,42 @@
     background: #333;
     color: #fff;
     border-radius: 3px 3px 0 0;
-  }
-  @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
     .board-column-header {
-      text-indent: -1000px;
+        text-indent: -1000px;
     }
-  }
-  .board-column.todo .board-column-header {
+}
+.board-column.todo .board-column-header {
     background: #4A9FF9;
-  }
-  .board-column.working .board-column-header {
+}
+.board-column.working .board-column-header {
     background: #f9944a;
-  }
-  .board-column.done .board-column-header {
+}
+.board-column.done .board-column-header {
     background: #2ac06d;
-  }
-  .board-column-content {
+}
+.board-column-content {
     position: relative;
     border: 10px solid transparent;
     min-height: 95px;
-  }
-  .board-item {
+}
+.board-item {
     position: absolute;
     width: 100%;
     margin: 5px 0;
-  }
-  .board-item.muuri-item-releasing {
+}
+.board-item.muuri-item-releasing {
     z-index: 9998;
-  }
-  .board-item.muuri-item-dragging {
+}
+.board-item.muuri-item-dragging {
     z-index: 9999;
     cursor: move;
-  }
-  .board-item.muuri-item-hidden {
+}
+.board-item.muuri-item-hidden {
     z-index: 0;
-  }
-  .board-item-content {
+}
+.board-item-content {
     position: relative;
     padding: 20px;
     background: #fff;
@@ -73,12 +73,12 @@
     cursor: pointer;
     -webkit-box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
     box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
-  }
-  @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
     .board-item-content {
-      text-align: center;
+        text-align: center;
     }
     .board-item-content span {
-      display: none;
+        display: none;
     }
-  }
+}
