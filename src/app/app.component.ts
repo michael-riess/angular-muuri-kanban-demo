@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'Muuri Kanban Demo (Angular 6)';
+    title = 'Muuri Kanban Demo (Angular 8)';
 }
