@@ -27,9 +27,7 @@ export class HomePageComponent implements OnInit {
                 layoutDuration: 400,
                 layoutEasing: 'ease',
                 dragEnabled: true,
-                dragSort: () => {
-                    return this.columnGrids;
-                },
+                dragSort: () => this.columnGrids,
                 dragSortInterval: 0,
                 dragContainer: document.body,
                 dragReleaseDuration: 400,
